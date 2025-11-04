@@ -1,5 +1,8 @@
-public classe TextMessage : MassageBase
+public class TextMessage : MessageBase
 {
-    public TextMessage(string massege)
-    
+    public TextMessage(string message)
+        :base(message)
+    {
+            
+    }
 }

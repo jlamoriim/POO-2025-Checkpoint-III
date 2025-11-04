@@ -1,11 +1,11 @@
-public abstract classe messageBase
+public abstract class MessageBase
 {
-    public MassageBase(string massage)
+    protected MessageBase(string message)
     {
-        Massage = massage;
-        SendAt = DataTime.Now;
+        Message = message;
+        SendAt = DateTime.Now;
     }
 
-    public string Massage { get; }
-    public DataTime SendAt { get; }
+    public string Message { get; }
+    public DateTime SendAt { get; }
 }
